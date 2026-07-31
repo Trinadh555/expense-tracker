@@ -42,7 +42,6 @@ venv\Scripts\activate
 source venv/bin/activate
 
 python -m pip install -r requirements.txt
-```t
 ```
 
 ## 2. Run the server
