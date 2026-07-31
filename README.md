@@ -32,15 +32,23 @@ your-repo/
 ## 1. Install dependencies
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
+
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+
+python -m pip install -r requirements.txt
+```t
 ```
 
 ## 2. Run the server
 
 ```bash
-python3 -m flask --app src.main run --port 8000
+python -m flask --app src.main run --port 8000
 ```
 
 The API will be available at `http://127.0.0.1:8000`.
@@ -51,7 +59,7 @@ Tests use only the Python standard library (`unittest`) plus Flask's built-in te
 client, so no extra test dependencies are required.
 
 ```bash
-python3 -m unittest discover -s tests -v
+python -m unittest discover -s tests -v
 ```
 
 (If you prefer pytest, `pip install pytest` and then just run `pytest` — pytest can
